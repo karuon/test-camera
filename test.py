@@ -13,4 +13,3 @@ while True:
     if cv2.waitKey(delay) & 0xFF == ord('q'):
         break
 cv2.destroyWindow(winodw_name)
-
