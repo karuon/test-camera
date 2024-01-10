@@ -3,7 +3,7 @@ import sys
 
 delay = 1
 window_name = 'frame'
-camera = cv2.VideoCaputure(0)
+camera = cv2.VideoCapture(0)
 if not camera.isOpened():
     sys.exit()
 
