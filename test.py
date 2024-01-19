@@ -20,7 +20,7 @@ def main():
                 break
 
             # 取得したフレームを表示
-            cv2.imshow('USB Camera', frame)
+            cv2.imshow('frame', frame)
 
             # 'q'キーが押されたらループを終了
             if cv2.waitKey(1) & 0xFF == ord('q'):
