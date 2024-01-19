@@ -1,4 +1,5 @@
 import cv2
+cv2.nameWindow("frame")
 
 def main():
     # USBカメラにアクセスするためのキャプチャオブジェクトを作成
