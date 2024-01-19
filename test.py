@@ -9,6 +9,14 @@ def main():
     if not cap.isOpened():
         print("Error: Could not open camera.")
         return
+    cap.set(cv2.CAP_PROP_FRAME_WIDTH,640)
+    cap.set(cv2.CAP_PROP_FRAME_HEIGHT,480)
+    cap.set(cv2.CAP_PROP_FPS,30)
+
+    width  = cap.get(cv2.CAP_PROP_FRAME_WIDTH)
+    height = cap.get(cv2.CAP_PROP_FRAME_HEIGHT)
+    fps    = cap.get(cv2.CAP_PROP_FPS)
+
 
     try:
         while True:
@@ -31,6 +39,3 @@ def main():
         # プログラム終了時にはカメラを解放
         cap.release()
         cv2.destroyAllWindows()
-
-if __name__ == "__main__":
-    main()
