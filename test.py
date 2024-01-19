@@ -17,7 +17,6 @@ def main():
     height = cap.get(cv2.CAP_PROP_FRAME_HEIGHT)
     fps    = cap.get(cv2.CAP_PROP_FPS)
 
-
     try:
         while True:
             # カメラからフレームを取得
@@ -39,3 +38,6 @@ def main():
         # プログラム終了時にはカメラを解放
         cap.release()
         cv2.destroyAllWindows()
+
+if __name__ == "__main__":
+    main()
