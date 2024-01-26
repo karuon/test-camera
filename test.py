@@ -1,5 +1,4 @@
 import cv2
-cv2.nameWindow("frame")
 
 def main():
     # USBカメラにアクセスするためのキャプチャオブジェクトを作成
@@ -31,6 +30,7 @@ def main():
             cv2.imshow('frame', frame)
 
             # 'q'キーが押されたらループを終了
+            key = cv2.waitKey(30)
             if cv2.waitKey(1) & 0xFF == ord('q'):
                 break
 
