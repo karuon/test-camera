@@ -12,10 +12,6 @@ def main():
     cap.set(cv2.CAP_PROP_FRAME_HEIGHT,120)
     cap.set(cv2.CAP_PROP_FPS,30)
 
-    width  = cap.get(cv2.CAP_PROP_FRAME_WIDTH)
-    height = cap.get(cv2.CAP_PROP_FRAME_HEIGHT)
-    fps    = cap.get(cv2.CAP_PROP_FPS)
-
     try:
         while True:
             # カメラからフレームを取得
