@@ -12,8 +12,8 @@ def main():
     cap.set(cv2.CAP_PROP_FRAME_HEIGHT,240)
     cap.set(cv2.CAP_PROP_FPS,30)
 
-    cv2.namedWindow('frame',cv2.WINDOW_NOMAL)
-    cv2.resizeWindow('frame',320,240)
+    cv2.namedWindow("frame",cv2.WINDOW_NOMAL)
+    cv2.resizeWindow("frame",320,240)
 
     try:
         while True:
@@ -26,7 +26,7 @@ def main():
                 break
 
             # 取得したフレームを表示
-            cv2.imshow('frame', frame)
+            cv2.imshow("frame", frame)
 
             # 'q'キーが押されたらループを終了
             key = cv2.waitKey(30)
