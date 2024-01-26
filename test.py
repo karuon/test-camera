@@ -8,8 +8,8 @@ def main():
     if not cap.isOpened():
         print("Error: Could not open camera.")
         return
-    cap.set(cv2.CAP_PROP_FRAME_WIDTH,320)
-    cap.set(cv2.CAP_PROP_FRAME_HEIGHT,240)
+    cap.set(cv2.CAP_PROP_FRAME_WIDTH,160)
+    cap.set(cv2.CAP_PROP_FRAME_HEIGHT,120)
     cap.set(cv2.CAP_PROP_FPS,30)
 
     width  = cap.get(cv2.CAP_PROP_FRAME_WIDTH)
